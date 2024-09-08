@@ -16,3 +16,19 @@ function calculateTip(bill) {
 let testBill = 100;
 let testTip = calculateTip(testBill);
 console.log(`For a bill of {100}, the tip is {15}`);
+
+// Task 4: Utiize Arrays
+
+let bills = [275, 40, 430];
+let tips = bills.map(calculateTip);
+let totals = bills.map((bill, index) => bill + tips[index]);
+console.log(bills);
+console.log(tips);
+console.log(totals);
+
+let bills2 = [125,555,44];
+let tips2 = bills2.map(calculateTip);
+let totals2 = bills2.map((bill, index) => bill + tips2[index]);
+console.log(bills2);
+console.log(tips2);
+console.log(totals2);
